@@ -1,0 +1,53 @@
+
+body{
+    background-color:#EFAADA;
+    text-align: center;
+}
+
+h1{
+    
+    font-family:Fantasy;
+    font-size: 350%
+}
+
+#para{
+    position: relative;
+    bottom:30px;
+    left: 120px;
+}
+#firstimage{
+    width:500px;
+    border: 5px solid #555;
+    
+}
+
+
+
+#summary{
+    width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Courier New, Courier, monospace;
+    position:relative;
+    left:230px;
+    bottom:340px;
+}
+#summarytwo{
+    width: 28em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:Courier New, Courier, monospace;
+
+    text-align: center;
+}
+
+
+#imagetwo{
+    width:450px;
+    border: 5px solid #555;
+}
+
+footer{
+    text-align:left;
+    font-family:cursive;
+}
