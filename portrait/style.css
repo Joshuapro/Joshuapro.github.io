@@ -112,7 +112,7 @@ body{
     border-radius: 50%;
     position: absolute;
     left: 300px;
-    bottom:400px;
+    top:400px;
     z-index:5;
     background-color:#feeaae;
     filter:blur(5px)
@@ -125,7 +125,7 @@ body{
     border-radius: 50%;
     position: absolute;
     left: 650px;
-    bottom:400px;
+    top:400px;
     z-index:5;
     background-color:#feeaae;
     filter:blur(5px)
@@ -144,7 +144,7 @@ body{
         background-color: #ff6666;
         border-color:pink;
         position:absolute;
-        bottom:320px;
+        top:570px;
         left: 390px;
         z-index:3;
 }
@@ -160,7 +160,7 @@ body{
     width:180px;
     background-color:black;
     position:absolute;
-    bottom:350px;
+    top:585px;
     left:410px;
     z-index:4;
 }
@@ -204,7 +204,7 @@ body{
     position:absolute;
     z-index:0;
     left:430px;
-    bottom:32px;
+    top:780px;
 }
 
 .body{
