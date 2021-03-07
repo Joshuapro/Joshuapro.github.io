@@ -1,0 +1,488 @@
+/* cross-page styling starts here */
+.homeButton{
+    position:relative;
+    text-align:center;
+    padding: 0.5em;
+    font-family: 'Lobster', cursive;
+    font-size:3em;
+    background-color:#dcc4c4;
+    color:white;
+    border: 4mm ridge rgb(227,184,176);
+    word-spacing:20px;
+}
+.prev-and-next{
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    text-align: center;
+    padding: 3em
+}
+.prev-and-next div{
+    padding: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #dfa18f
+}
+.prev-and-next #prev, #next{
+    border: 2px solid #d88b73;
+    background-color: #fae4d9;
+}
+footer{
+    padding: 10px;
+    background-color: #d9abac;
+    opacity: 0.7;
+    margin: 0px -7px -8px -7px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #faf8f5
+}
+/* cross-page styling ends here */
+/* main page styling starts here */
+#main-page{
+    background-color: #f0ded4
+}
+.main-circle{
+    width: 29em;
+    height: 29em;
+    background: #cb7d6b;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-circle{
+    width: 15em;
+    height: 15em;
+    background: #cb7d6b;
+    border-radius: 50%;
+    opacity: 0.5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30em;
+    margin-bottom: 1em;
+}
+.exhibit-circle{
+    width: 16em;
+    height: 16em;
+    background: #cb7d6b;
+    border-radius: 50%;
+    opacity: 0.5;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5em;
+    margin-left: 5em
+}
+.transition-circle{
+    width: 17em;
+    height: 17em;
+    background: #cb7d6b;
+    opacity: 0.5;
+    border-radius: 50%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    margin-top:10em
+}
+.sophie-circle{
+    width: 17em;
+    height: 17em;
+    background: #cb7d6b;
+    opacity: 0.5;
+    border-radius: 50%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em
+}
+.joshua-circle{
+    width: 17em;
+    height: 17em;
+    background: #cb7d6b;
+    opacity: 0.5;
+    border-radius: 50%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20em;
+    margin-bottom: 3em;
+}
+.all p{
+    font-size: 25px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #FFE4C4
+}
+.main-circle p{
+    font-size: 100px
+}
+.all div:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;   
+}  
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);
+    100% { transform: scale(1); }
+    }
+}
+/* main page styling ends here */
+/* transition/quote page styling starts here */
+#columns{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#columns #quote-one{
+    font-size: 3.5em;
+    padding: 15px;
+    text-align: right;
+    color: #d9abac
+}
+#columns img{
+    width: 30vw;
+    height: 85vh;
+    border: 5px ridge rgb(227,184,176);
+}
+#columns #quote-two{
+    font-size: 3.5em;
+    color: #d9abac;
+    display: flex;
+    align-items:flex-end;
+}
+#columns p:hover{
+    transition: 1s;
+    text-decoration: underline;
+    color: #c47d6f;
+    font-size: 65px;
+}
+/* transition/quote page styling ends here */
+/* Sophie Reflection page styling starts here */
+#two-columns{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr
+}
+#two-columns img{
+    margin-top: 3em;
+    width: 90%;
+    float: right;
+    border: 15px outset rgb(227,184,176);
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#two-columns:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+#two-columns #summary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#summary h1{
+    border: 5px double #c97867;
+    padding: 5px;
+    background-color: #f6dcd7;
+    font-family: 'Pacifico', cursive;
+}
+#summary #title-one{
+    background-color: #fdefe2
+}
+#summary p{
+    font-size: 21px;
+    font-family: 'Satisfy', cursive;
+}
+#summary p:first-letter {
+    float: left;
+    font-size: 2em;
+    line-height: 1;
+    margin-right: 25px
+  }
+/* Sophie Reflection page ends here */
+
+
+
+/*author code*/
+#authorbody{
+    text-align:center;
+    background-color:#f1ddd6;
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    text-align: center;
+    padding: 3em
+}
+#intro{
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#name{
+    color:#628c80;
+    font-size:30px;
+    
+}
+#image{
+    background-color:#Fadbfc;
+    width:520px;
+    border-radius: 30px;
+}
+#michael{
+    width:280px;
+    right:100px;
+    top:20px;
+    position:relative;
+    border-radius: 8px;
+}
+
+#mandh{
+    position:relative;
+    border-radius: 8px;
+    width:280px;
+    left: 80px;
+    top:25px;
+}
+
+#line {
+  height: 700px;
+  width:10px;
+  background-color:white;
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  border-bottom-left-radius:80px 80px;
+  border-bottom-right-radius:80px 80px;
+}
+
+footer{
+    padding: 10px;
+    background-color: #D25555;
+    opacity: 0.7;
+    margin: 3em -7px -8px -7px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+/*author code ends here*/
+
+
+
+
+/* overview starts here*/
+
+#title{
+    font-family: 'Quicksand', sans-serif;
+    font-size:40px;
+}
+
+#overviewbody{
+    text-align:center;
+    background-color:#Fcfcec;
+    
+}
+
+#firstp{
+    font-size:20px;
+    width:800px;
+    position:relative;
+    margin-left: auto;margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#b2:hover #imagetwo, #b3:hover #imagethree, #b1:hover #imageone,#b4:hover #imagefour,#b5:hover #imagefive,#b6:hover #imagesix,#b7:hover #imageseven{
+    transform:scale(1.6);
+    rm .8s;
+    z-index:10
+}
+
+#imageone{
+    width:400px;
+    position:absolute;
+    left:125px;
+    top:430px;
+    transition: transform .8s;
+}
+#imagetwo{
+    width:400px;
+    position:absolute;
+    left:600px;
+    top:430px;
+    transition: transform .8s;
+}
+
+#imagethree{
+    width:400px;
+    position:absolute;
+    left:1075px;
+    top:430px;
+    transition: transform .8s;
+}
+
+#imagefour{
+    width:400px;
+    position:absolute;
+    left:125px;
+    top:830px;
+    transition: transform .8s;
+}
+
+#imagefive{
+    width:400px;
+    position:absolute;
+    left:600px;
+    top:830px;
+    transition: transform .8s;
+}
+
+#imagesix{
+    width:400px;
+    position:absolute;
+    left:1075px;
+    top:830px;
+    transition: transform .8s;
+}
+
+#imageseven{
+    width:400px;
+    position:absolute;
+    left:125px;
+    top:1230px;
+    transition: transform .8s;
+}
+
+#lastp{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:1130px;
+    left:640px;
+    font-family: 'Quicksand', sans-serif;
+}
+#lastp2{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:1130px;
+    left:1125px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#lastp3{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:730px;
+    left:645px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#lastp4{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:730px;
+    left:175px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#lastp5{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:730px;
+    left:1135px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#lastp6{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:1130px;
+    left:175px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#lastp7{
+    font-size:15px;
+    width:300px;
+    position:absolute;
+    margin-left: auto;margin-right: auto;
+    top:1530px;
+    left:175px;
+    font-family: 'Quicksand', sans-serif;
+}
+/* overview ends here*/
+
+/* joshReflection starts here*/
+#joshBack{
+    position:relative;
+
+    background-color:#C6dbff;
+    left:200px;
+    height:700px;
+    width:1100px;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius:30px 30px;
+    border-bottom-right-radius:30px 30px;
+    z-index:1;
+}
+
+#joshReflImg{
+    width:800px;
+    text-align:center;
+    margin-left: auto;margin-right: auto;
+    position:absolute;
+    top:200px;
+    z-index:10;
+    left:100px;
+    filter:blur(5px);
+    transition: 10s;
+    border: 4mm ridge rgb(227,184,176);
+    
+}
+
+#joshReflImg:hover{
+    filter:none;
+    transition: 0.6s ease-in-out;
+}
+
+#reflectionjosh{
+    
+    border: 4px solid;
+    position:absolute;
+    width:600px;
+    left:800px;
+    top:530px;
+    margin-left: auto;margin-right: auto;
+    background-color:#C6efff;
+    font-family: 'Quicksand', sans-serif;
+    font-size:20px;
+    z-index:11;
+    padding: 20px;
+}
+
+
+
+
