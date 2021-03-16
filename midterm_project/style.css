@@ -1,0 +1,256 @@
+/*indexpage*/
+body{
+    background: linear-gradient(#FBEEC1,#DAAD86) fixed;
+}
+
+#bitcoin_ttl{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
+    position:relative;
+    top:70px;
+    background-color:#F1d5bc;
+    width:700px;
+}
+
+#intro{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    width:1000px;
+    margin:auto;
+    position:relative;
+    
+}
+
+#trading{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    position:relative;
+}
+
+.sites{
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap:20px;
+    left:250px;
+    position:relative;
+    text-align:center;
+}
+#block1,#block2,#block3{
+    background-color:#F7E7CE;
+    height:40px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 10px;
+    border: solid;
+    opacity:0.7;
+}
+#block1:hover,#block2:hover,#block3:hover{
+    opacity:1;
+}
+
+#learn{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    right:300px;
+    position:relative;
+}
+
+#bitcoin-graph{
+    position:absolute;
+    left:740px;
+    top:30px;
+    width:500px;
+    transition: transform .8s;
+}
+#bitcoin-graph2{
+    position:absolute;
+    left:1010px;
+    top:30px;
+    width:520px;
+    transition: transform .8s;
+}
+#bitcoin-graph3{
+    position:absolute;
+    left:1210px;
+    top:30px;
+    width:500px;
+    transition: transform .8s;
+}
+#bitcoin-graph:hover,#bitcoin-graph2:hover,#bitcoin-graph3:hover{
+    transform:scale(1.2);
+    transition: transform 0.3s;
+}
+
+.grid_map{
+    display:grid;
+    grid-template-columns: 400px 450px;
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:30px;
+    margin:auto;
+    text-align:center;
+    position:relative;
+    left:500px;
+    font-family:'Bebas Neue', cursive;
+}
+
+#bkcimg{
+    width:350px;
+    position:relative;
+    top:60px;
+}
+
+.block_chain{
+    font-size:40px;
+    padding-top:30px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#e4effd;
+    grid-row: span 3;
+}
+#new{
+    width:350px;
+    top:10px;
+    position:relative;
+}
+#algoimg{
+    width:250px;
+    top:10px;
+    position:relative;
+}
+.algorithm{
+    padding-top:30px;
+    background-color:#afcffa;
+    grid-row: span 2;
+    font-size:40px;
+}
+.algorithm:hover, .mining_fork:hover, .block_chain:hover, .history:hover{
+    animation-name:spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4000ms;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.mining_fork{
+    background-color:#7aaff7;
+    grid-row: span 3;
+    font-size:40px;
+    padding-top:40px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.history{
+    background-color:#6e9ede;
+    grid-row: span 2;
+    font-size:40px;
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+#box{
+    position:absolute;
+    background-color:#8e8d6b;
+    width:1200px;
+    height:1000px;
+    z-index:-1;
+    top:-70px;
+    left: -160px;
+    opacity:0.8;
+    border-radius:30px;
+}
+
+
+
+.footer1{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #bebc8e;
+    color: white;
+    text-align: center;
+    opacity:0.7
+}
+
+
+/*blockCHAIN*/
+
+#header1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 80px;
+    position:relative;
+    left: 100px;
+    width:1100px;
+    height:250px;
+    background-color:#eab676;
+    padding:40px;
+    
+}
+
+#paragraph1{
+    width:400px;
+    position:relative;
+    left:200px;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+#bkimg1{
+    width:700px;
+    left: 750px;
+    bottom:350px;
+    position:relative;
+    
+}
+#homebutton{
+    position: fixed;
+    width:60px;
+    height:25px;
+    left:-5px;
+    background-color:#e5c7b0;
+    padding: 15px;
+    font-family: 'Source Code Pro', sans-serif;
+    border: 1mm ridge rgba(216,109,52,0.6);
+    font-family: 'Teko', sans-serif;
+    font-size:25px;
+}
+    
+#header2{
+    font-family:'Source Code Pro', sans-serif;
+    position:relative;
+    font-size:40px;
+}
+
+#bkimg2{
+    width:500px;
+    position:relative;
+    left:150px;
+    top:-600px;
+    border: 2mm ridge rgba(250,219,148,0.6);
+}
+#bkimg3{
+    position:absolute;
+    width:600px;
+    right:700px;
+    top:320px;
+    border: 2mm ridge rgba(250,219,148,0.6);
+}
+
+#paragraph2{
+    width:500px;
+    font-family:'Source Code Pro', sans-serif;
+    left: 900px;
+    position:relative;
+    top:100px;
+}
