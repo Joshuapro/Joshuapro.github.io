@@ -20,6 +20,12 @@ body{
     width:1000px;
     margin:auto;
     position:relative;
+    top:350px;
+    padding:20px;
+    border-style: double;
+    border-width:15px;
+    border-color:rgba(255,255,255, 0.5);
+    border-radius:10px;
     
 }
 
@@ -28,9 +34,11 @@ body{
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
     position:relative;
+    top:400px;
 }
 
 .sites{
+    top:400px;
     display:grid;
     grid-template-columns: 400px 400px 400px;
     grid-gap:20px;
@@ -54,8 +62,9 @@ body{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 50px;
-    right:300px;
+    right:400px;
     position:relative;
+    top:450px;
 }
 
 #bitcoin-graph{
@@ -85,6 +94,7 @@ body{
 }
 
 .grid_map{
+    top:500px;
     display:grid;
     grid-template-columns: 400px 450px;
     grid-auto-rows: minmax(150px,auto);
@@ -127,19 +137,27 @@ body{
     font-size:40px;
 }
 .algorithm:hover, .mining_fork:hover, .block_chain:hover, .history:hover{
-    animation-name:spin;
+    animation-name:imgShake;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 4000ms;
+    animation-duration: 500ms;
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+/*@keyframes spin {*/
+/*    from {*/
+/*        transform:rotate(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform:rotate(360deg);*/
+/*    }*/
+/*}*/
+@keyframes imgShake{
+    0% { transform: translate(1px, 1px) rotate(0deg);}
+    10% { transform: translate(-1px, -2px) rotate(-2deg);}
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    50% { transform: translate(-1px, 2px) rotate(2deg);}
+    70% { transform: translate(3px, 1px) rotate(-2deg);}
+    90% { transform: translate(1px, 2px) rotate(0deg);}
 }
 
 .mining_fork{
@@ -181,7 +199,9 @@ body{
     background-color: #bebc8e;
     color: white;
     text-align: center;
-    opacity:0.7
+    opacity:0.7;
+    font-size:18px;
+    font-family:'Bebas Neue', cursive;
 }
 
 
@@ -201,9 +221,11 @@ body{
 
 #paragraph1{
     width:400px;
+    height:500px;
     position:relative;
     left:200px;
     font-family: 'Source Code Pro', sans-serif;
+    
 }
 
 #bkimg1{
@@ -213,7 +235,7 @@ body{
     position:relative;
     
 }
-#homebutton{
+.homebutton{
     position: fixed;
     width:60px;
     height:25px;
@@ -253,4 +275,74 @@ body{
     left: 900px;
     position:relative;
     top:100px;
+}
+
+
+/*Algo html code starts here*/
+#algoTitle{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100px;
+    position:relative;
+    top:50px;
+}
+
+.flexbox-container{
+    display:flex;
+    justify-content:space-around;
+    top:300px;
+    position:relative;
+    background-color:#c5ebec;
+    height:900px;
+}
+
+.items{
+    width:600px;
+    margin:10px;
+    background-color:#eaecdf;
+    border:3px solid #333;
+    opacity:0.7;
+    font-family: 'Source Code Pro', sans-serif;
+    
+}
+
+.item-1{
+    min-height:400px;
+    align-self:flex-end;
+}
+.item-2{
+    min-height:400px;
+    align-self: start;
+}
+.item-3{
+    min-height:500px;
+    height:700px;
+    align-self:center;
+
+}
+
+#algoIMG1{
+    width:300px;
+    position:relative;
+    left: 100px;
+    align-self:center;
+}
+
+#algoIMG2{
+    width:300px;
+    position:absolute;
+    left: 1100px;
+    top: 50px;
+    animation-name:spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 20000ms;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
