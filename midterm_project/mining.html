@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Midterm_project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body id = "bodymine">
+    <h class = "homebutton" onclick="location.href='index.html';">
+        |   |   |   |
+    </h>
+   <div class = "container">
+       <div class = "mining_div">
+           <h class = "mine_head">
+               Mining
+            <h>
+            <p id = "miningp1">
+                In order to produce new blocks participants of the network need to engage in a costly and intensive computational activity known as mining. Whenever transactions are made, all network nodes receive them and verify their validity. Then, miner nodes gather these transactions from the memory pool and begin assembling them into a block (candidate block).<br><br>
+            </p>
+            <p id = "miningp2">
+                After mining, all the transactions are ordered into a Merkle tree structure. A Merkle tree summarizes all the transactions in a block by producing a digital fingerprint of the entire set of transactions, thereby enabling a user to verify whether or not a transaction is included in a block. Merkle trees are created by repeatedly hashing pairs of nodes until there is only one hash left (this hash is called the Root Hash, or the Merkle Root).<br><br>
+                We can see how it is implemented in the figure below. The root hash is only a 32 byte number. The strucutre is built bottom up, and at each layer the total amount of transactions is combined together.
+            </p>
+            <img src = "images/merkle_tree.jpg" id = "no">
+            <p id="lastMining">
+                "Mining" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. The total energy consumed by the bitcoin mining process could reach 128 TWh a year as researchers estimate.<br><br>
+                It is almost impossible to mine a bitcoin. As of 3 November 2020, the mining difficulty of getting a bitcoin is 1 in 16 trillion.
+                <br> The image below shows a ASIC miner, a device for the single sole purpose of mining. Prices start at 2k and can cost up to 4k.
+            </p>
+            <img src = "images/miner.jpg" id = "yes">
+            
+           
+        </div>
+       <div class = "fork_div">
+           <h class = "mine_head">
+               Forking
+            <h>
+            <p class = "fork1">
+            Bitcoin forks are splits that happen in the transaction chain based on different user opinions about transaction history. These splits create new versions of Bitcoin currency, and they are a natural result of the structure of the blockchain system, which operates without a central authority.
+            </p>
+            <p class = "fork2">
+            There are <strong>soft</strong> and <strong>hard<strong> forks.<br><br><br>
+            <strong>Soft Forks</strong>: as seen below, the soft fork is backwards-compatible because old nodes will recognize the new blocks as valid and new nodes follow old rules too.
+            </p>
+            <img src = "images/soft.jpg" id = "hi">
+            <p class = "fork3">
+            <strong>Hard Forks</strong>: as seen below, a hard fork requires all nodes or users to upgrade to the latest version of the protocol software.
+            </p>
+            <img src = "images/hard.jpg" id = "hi2">
+           
+        </div>
+    <div>
+    <br>
+    <br>
+    <div id = "line">
+        
+    </div>
+<footer class = "footer1">
+    Joshua Young | jy2385@nyu.edu | ig: joshuayyoungggg
+</footer>
+</html>

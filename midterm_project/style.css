@@ -2,6 +2,10 @@
 body{
     background: linear-gradient(#FBEEC1,#DAAD86) fixed;
 }
+.indFrame{
+
+
+}
 
 #bitcoin_ttl{
     text-align: center;
@@ -11,7 +15,21 @@ body{
     top:70px;
     background-color:#F1d5bc;
     width:700px;
+    animation-name:slide-in-left;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 900ms;
 }
+@keyframes slide-in-left {
+    from{
+        right:600px;
+    }
+    to{
+        right:0px;
+    }
+}
+
+
 
 #intro{
     text-align: center;
@@ -26,7 +44,6 @@ body{
     border-width:15px;
     border-color:rgba(255,255,255, 0.5);
     border-radius:10px;
-    
 }
 
 #trading{
@@ -62,7 +79,7 @@ body{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 50px;
-    right:400px;
+    right:200px;
     position:relative;
     top:450px;
 }
@@ -73,6 +90,10 @@ body{
     top:30px;
     width:500px;
     transition: transform .8s;
+    animation-name:fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1500ms;
 }
 #bitcoin-graph2{
     position:absolute;
@@ -80,6 +101,10 @@ body{
     top:30px;
     width:520px;
     transition: transform .8s;
+    animation-name:fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1500ms;
 }
 #bitcoin-graph3{
     position:absolute;
@@ -87,6 +112,10 @@ body{
     top:30px;
     width:500px;
     transition: transform .8s;
+    animation-name:fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1500ms;
 }
 #bitcoin-graph:hover,#bitcoin-graph2:hover,#bitcoin-graph3:hover{
     transform:scale(1.2);
@@ -94,7 +123,7 @@ body{
 }
 
 .grid_map{
-    top:500px;
+    top:550px;
     display:grid;
     grid-template-columns: 400px 450px;
     grid-auto-rows: minmax(150px,auto);
@@ -233,6 +262,7 @@ body{
     left: 750px;
     bottom:350px;
     position:relative;
+    border: 2mm ridge rgba(250,219,148,0.6);
     
 }
 .homebutton{
@@ -284,8 +314,11 @@ body{
     font-size: 100px;
     position:relative;
     top:50px;
+    animation-name:fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1500ms;
 }
-
 .flexbox-container{
     display:flex;
     justify-content:space-around;
@@ -293,8 +326,19 @@ body{
     position:relative;
     background-color:#c5ebec;
     height:900px;
+    animation-name:slide-in;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 500ms;
 }
-
+@keyframes slide-in {
+    from{
+        top:800px;
+    }
+    to{
+        top:300px;
+    }
+}
 .items{
     width:600px;
     margin:10px;
@@ -307,26 +351,27 @@ body{
 
 .item-1{
     min-height:400px;
+    padding:20px;
     align-self:flex-end;
 }
 .item-2{
     min-height:400px;
     align-self: start;
+    padding:20px;
 }
 .item-3{
     min-height:500px;
     height:700px;
     align-self:center;
+    padding:20px;
 
 }
-
 #algoIMG1{
-    width:300px;
+    width:400px;
     position:relative;
     left: 100px;
     align-self:center;
 }
-
 #algoIMG2{
     width:300px;
     position:absolute;
@@ -337,7 +382,13 @@ body{
     animation-timing-function: linear;
     animation-duration: 20000ms;
 }
-
+#algoIMG3{
+    width:300px;
+    position:relative;
+    left: 100px;
+    align-self:center;
+    top:20px
+}
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -345,4 +396,144 @@ body{
     to {
         transform:rotate(360deg);
     }
+}
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+
+/*start of mining*/
+.container{
+    display:grid;
+    grid-template-columns: 400px 450px;
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap:150px;
+    margin:auto;
+    text-align:center;
+    position:relative;
+    left:300px;
+    font-family: 'Redressed', cursive;
+    animation: slide-up-for 1s linear 1;
+}
+
+@keyframes slide-up-for {
+    from{
+        top:600px;
+    }
+    to{
+        top:0px;
+    }
+}
+
+
+
+.mine_head{
+    font-size:70px;
+    grid-row:span 2;
+}
+#miningp1{
+    font-size:15px;
+    top:100px;
+    position:relative;
+    background-color:#FFFFFF;
+    padding:10px;
+    border-radius:30px;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+#miningp2{
+    font-size:15px;
+    font-family: 'Source Code Pro', sans-serif;
+    position:relative;
+    top:200px;
+    background-color:black;
+    color:white;
+    padding:10px;
+    border-radius:30px;
+}
+
+#no{
+    width: 400px;
+    position:relative;
+    top:200px;
+}
+#yes{
+    width: 400px;
+    position:relative;
+    top:300px;
+}
+
+#lastMining{
+    font-size:15px;
+    font-family: 'Source Code Pro', sans-serif;
+    position:relative;
+    top:300px;
+    background-color:white;
+    padding:10px;
+    border-radius:30px;
+}
+
+#bodymine{
+    padding:150px;
+}
+
+.fork1{
+    font-size:15px;
+    font-family: 'Source Code Pro', sans-serif;
+    position:relative;
+    background-color:black;
+    color:white;
+    padding:10px;
+    border-radius:30px;
+    top:100px;
+}
+.fork2{
+    font-size:20px;
+    font-family: 'Source Code Pro', sans-serif;
+    position:relative;
+    top:300px;
+}
+
+#hi{
+    position:relative;
+    top:350px;
+    width:500px;
+}
+.fork3{
+    font-size:20px;
+    font-family: 'Source Code Pro', sans-serif;
+    position:relative;
+    top:400px;
+
+}
+#hi2{
+    position:relative;
+    top:450px;
+    width:500px;
+}
+
+#line{
+    position:absolute;
+    background-color:black;
+    width:5px;
+    animation:lineup 3s forwards;
+    height:1800px;
+    top:50px;
+    left: 470px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+            0% {
+                background-color:#FBEEC1;
+            }
+  
+            50% {
+                background-color:black;
+            }
+  
+            100% {
+                background-color:#FBEEC1;
+            }
 }
