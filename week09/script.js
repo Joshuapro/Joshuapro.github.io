@@ -33,7 +33,6 @@ function correctInput() {
   result.textContent = "You got it in just " + counter.toString() + " tries!";
   detection.setAttribute("style", "animation-name:winning;");
   document.getElementById("win").setAttribute("style", "display:inline");
-
 }
 
 function incorrect() {
