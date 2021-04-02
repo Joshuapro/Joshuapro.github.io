@@ -53,6 +53,23 @@ body{
     text-align:left;
     border-radius:10px;
     padding:25px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 800ms;
+    animation-name:none;
+}
+
+
+@keyframes moving {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 #list li{
