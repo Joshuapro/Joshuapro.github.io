@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Snake Game </title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="main.css">
-    <script src="script.js" defer></script>
+    <script src="snake.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
-    <title>Response</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id = "head">
-        The medium is message
+    <div id="container">
+        <div id="score">
+            <div id = "hi" style="color:red">User's</div>
+            <div>Current Score: <span id="current" style="color:#Fc9fcf">0</span>
+            </div>
+        </div>
+        <br>
+        <canvas id="myCanvas" width="550" height="450">
+        </canvas>
+        <div id = "scores">
+            Past Scores:
+            <ul id = "list">
+
+            </ul>
+        </div>
+        <div id = "type">
+            <p id = "pone">
+                Type in your name to start
+            </p>
+            <input type="text" id="input" placeholder="NAME">
+            <button id = "b1">Start</button>
+        </div>
+        <div id="gameover">
+            GAME OVER
+            <br>
+            Score: <span id="myfinal"></span>
+            <br>
+            <button id = "ha">Click To Re-Play</button>
+        </div>
     </div>
-    <p id = "intro">
-        This is a website where you can add/delete what you got out of the reading "The medium is message" to the list. 
-    </p>
-    <div id = "type">
-        <input type="text" id="input" placeholder="Insert some thoughts...">
-        <button id = "b1">add to list</button>
-    </div>
-    <img src = "image1.png" id = "image1">
-    <img src = "image2.png" id = "image2">
-    <img src = "image3.png" id = "image3">
-    <ul id = "list">
-        <li>
-            The way we send and receive information is sometimes more important than the information.
-        </li>
-        <li>
-            In mordern days, the mediums would be social media platforms like twitter, facebook, iMessages, etc.
-            
-        </li>
-        <li>
-            Mediums have changed the ways we behave. Memory spans have been reduced a lot from digital techonology. For example, normal conversations have been replacd with emojis.
-        </li>
-        <li>
-        "Television demands participation and involvement in depth of the whole being. It will not work as a background." - which changes how we behave.
-        </li>
-        <li>
-            The text got me really confusing at first. It had a variety of distinct images, which help picture what Marshall McLuhan describes.
-        </li>
-        <li>
-        Everything is changing—you, your family, your
-        neighborhood, your education, your job, your government, your relation to "the others." And they're
-        changing dramatically.
-        </li>
-    </ul>
-    
+
+
+
 </body>
-
-
-<footer class= "footer1">
-    Joshua Y
-</footer>
 
 </html>
