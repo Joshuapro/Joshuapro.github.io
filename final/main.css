@@ -1,0 +1,114 @@
+.header1{
+    font-size:100px;
+    text-align:center;
+    font-family: 'Bungee Inline', cursive;
+}
+
+
+#image_1{
+    position:fixed;
+    left:500px;
+    top:600px;
+}
+#image_2{
+    position:fixed;
+}
+
+#image_3,#image_4,#image_5,#image_6,#image_7{
+    width:200px;
+    position:fixed;
+}
+
+#container{
+    position:relative;
+    text-align:center;
+    margin:auto;
+}
+#face2{
+    width:200px;
+    position:relative;
+    top:300px;
+    display:none;
+}
+
+.hehe {
+    background: linear-gradient(61deg, #c4f9c8, #3de2fd);
+    background-size: 2000% 2000% ;
+    -webkit-animation: colorr 10s ease infinite;
+    -moz-animation: colorr 10s ease infinite;
+    -o-animation: colorr 10s ease infinite;
+    animation: colorr 10s ease infinite;
+    
+}
+@-webkit-keyframes colorr {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@-moz-keyframes colorr {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@-o-keyframes colorr {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+@keyframes colorr {
+    0%{background-position:0% 22%}
+    50%{background-position:100% 79%}
+    100%{background-position:0% 22%}
+}
+
+
+.bubble {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 300px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  margin:auto;
+  top:360px;
+  opacity:0.9;
+  left:170px;
+  z-index:2;
+  display:none;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+  margin:auto;
+}
+
+
+
+/*second page html css*/
+body{text-align:center;}
+
+#header1{
+    text-align:center;
+    margin:auto;
+    text-align:justify;
+    font-size:100px;
+}
+
+
+#earthImg{
+    width:200px;
+}
+
+#G{
+    font-size:50px;
+}
+

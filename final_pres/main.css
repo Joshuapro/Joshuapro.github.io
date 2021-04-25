@@ -1,0 +1,69 @@
+.hehe{
+    text-align:center;
+}
+
+#hi{
+    font-size:50px;
+}
+
+#hey{
+    position:relative;
+    left:300px;
+    border: 1px solid black;
+    width:200px;
+    margin:auto;
+    font-size:30px;
+}
+
+#bye{
+    width:400px;
+    margin:auto;
+}
+
+.list-group{
+    width:500px;
+    margin:auto;
+}
+
+#lala{
+    font-size:40px;
+    right:350px;
+    position:relative;
+}
+
+#item1{width:200px;left:100px;position:relative;}
+
+#item2{width:200px;position:relative;}
+
+#item3{width:200px;right:100px;position:relative;}
+
+#item4{width:200px;right:150px;position:relative;}
+
+#line{
+    height:2px;
+    width:700px;
+    background-color:black;
+    margin:auto;
+    
+}
+
+
+/*page 2*/
+#game1i{
+    width:500px;
+}
+
+
+#yo{
+    width:500px;
+    margin:auto;
+}
+
+/*page3*/
+#item8{
+    width:750px;
+}
+
+#item9{
+    width:600px;
+}
