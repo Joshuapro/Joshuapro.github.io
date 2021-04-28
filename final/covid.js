@@ -2,7 +2,22 @@ let virusCount = 6;
 //home page
 $(document).ready(function(){
     //a delay start
-    setTimeout("animateDiv()",1000);
+    setTimeout("animateDiv()",1500);
+    //initializations
+    var newpos = makeNewPosition();
+    $("#image_2").css({top: newpos[0], left: newpos[1]});
+    newpos = makeNewPosition();
+    $("#image_3").css({top: newpos[0], left: newpos[1]});
+    newpos = makeNewPosition();
+    $("#image_4").css({top: newpos[0], left: newpos[1]});
+    newpos = makeNewPosition();
+    $("#image_5").css({top: newpos[0], left: newpos[1]});
+    newpos = makeNewPosition();
+    $("#image_6").css({top: newpos[0], left: newpos[1]});
+    newpos = makeNewPosition();
+    $("#image_7").css({top: newpos[0], left: newpos[1]});
+    
+    
     //onclick functions for different images and checking if the game is done
     //repetative code
     $('#image_2').on("click", function()
@@ -42,10 +57,12 @@ $(document).ready(function(){
         if (!virusCount) deleteV();
     });
 });
+//deleteV function called when game is over
 function deleteV(){
     $('#face2').fadeIn(1000);
     $('#image_1').hide();
     $('.bubble').fadeIn(5000);
+    $('.btn').fadeOut(1000);
 }
 
 //generate new position
@@ -90,6 +107,3 @@ function animateDiv(){
         });
     }
 };
-
-
-//This following section is getting data from websites
