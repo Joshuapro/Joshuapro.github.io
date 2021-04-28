@@ -23,5 +23,5 @@ function setApiData(){
         $("#totalRecoveredToday").text(newRecover);
         $("#totalDeathToday").text(newDeath)
     })
-    
 }
+
