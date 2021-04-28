@@ -3,8 +3,6 @@
     text-align:center;
     font-family: 'Bungee Inline', cursive;
 }
-
-
 #image_1{
     position:fixed;
     left:500px;
@@ -387,4 +385,45 @@
       width: 100%;
     }
   }
+}
+
+#dates{
+    position:relative;
+    top:150px;
+    right:280px;
+}
+
+#dateUsers{
+    position:relative;
+    top:62px;
+    width:300px;
+    right:-300px;
+    margin:auto;
+}
+
+#map{
+    width:700px;
+    position:relative;
+    padding:20px;
+    border-style: double;
+    border-width:15px;
+    border-color:rgb(239,6,61,0.5);
+    border-radius:10px;
+    top:50px;
+    right:300px;
+}
+
+#explanation{
+    position:relative;
+    font-family: 'Exo 2', sans-serif;
+    top:250px;
+    right:-300px;
+    width:400px;
+    margin:auto;
+    font-size:20px;
+}
+
+#comments{
+    top:200px;
+    position:relative;
 }
