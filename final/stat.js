@@ -7,6 +7,7 @@ let GetDateUpdate;
 $(document).ready(function(){
     //Call API
     setApiData();
+    //update comments section from firebase
     retrieveComments();
 })
 
@@ -43,7 +44,6 @@ function setApiData(){
         var datetime = currentdate.getFullYear()  + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "  "
         + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds() + " (EDT) ";
         $("#dateUser").text(datetime);
-        console.log(datetime);
     });
 }
 
@@ -57,12 +57,13 @@ function gotData(data){
     let info = data.val();
     let keys = Object.keys(info);
     
+    //extract every comment
     for (let i = 0; i < keys.length; i++){
         let j = keys[i];
         let name = info[j].name;
         let comment = info[j].comment;
         let date = info[j].date;
-    
+
         var commentString = "(" + date + ") " + name + ": "+ comment;
         var text = document.createTextNode(commentString);
         var item = document.createElement("li");
@@ -73,19 +74,18 @@ function gotData(data){
 }
 
 
-//update api
+//update api button
 $("#buttonUpdate").click(function(){
     setApiData();
     $("#dateUsers").fadeOut();
     $("#dateUsers").fadeIn();
 });
 
-//submit comments
+//submit comments button
 $("#bS").click(function(){
     //get user input
     let inputname = document.getElementById("inputName").value;
     let inputComment = document.getElementById("comment").value;
-    //set to nothing
     document.getElementById("inputName").value = "";
     document.getElementById("comment").value = "";
     //get date
@@ -100,5 +100,6 @@ $("#bS").click(function(){
         comment:inputComment,
         date: datetime,
     })
+    //refresh page
     location.reload();
 });
