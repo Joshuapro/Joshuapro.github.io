@@ -86,20 +86,28 @@ $("#bS").click(function(){
     //get user input
     let inputname = document.getElementById("inputName").value;
     let inputComment = document.getElementById("comment").value;
-    document.getElementById("inputName").value = "";
-    document.getElementById("comment").value = "";
-    //get date
-    var currentdate = new Date();
-    var datetime = currentdate.getFullYear()  + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "  "
-    + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds()
     
-    const database = firebase.database();
-    //set in database
-    database.ref("User/" + inputname + Math.floor(Math.random() * 220)).set({
-        name: inputname,
-        comment:inputComment,
-        date: datetime,
-    })
-    //refresh page
-    location.reload();
+    //check input
+    if (inputname == "" || inputComment == ""){
+        alert("Missing fields");
+    }else{
+        document.getElementById("inputName").value = "";
+        document.getElementById("comment").value = "";
+        //get date
+        var currentdate = new Date();
+        var datetime = currentdate.getFullYear()  + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "  "
+        + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds()
+        
+        const database = firebase.database();
+        //set in database
+        database.ref("User/" + inputname + Math.floor(Math.random() * 220)).set({
+            name: inputname,
+            comment:inputComment,
+            date: datetime,
+        })
+        //refresh page
+        location.reload();
+    }
+    
+    
 });
