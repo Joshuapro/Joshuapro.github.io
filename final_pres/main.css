@@ -24,7 +24,13 @@
     width:500px;
     margin:auto;
 }
-
+#line{
+    height:2px;
+    width:700px;
+    background-color:black;
+    margin:auto;
+    
+}
 #lala{
     font-size:40px;
     right:350px;
@@ -39,13 +45,6 @@
 
 #item4{width:200px;right:150px;position:relative;}
 
-#line{
-    height:2px;
-    width:700px;
-    background-color:black;
-    margin:auto;
-    
-}
 
 
 /*page 2*/

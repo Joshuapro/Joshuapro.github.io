@@ -1,7 +1,7 @@
 .header1{
     font-size:100px;
     text-align:center;
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Shadows Into Light', cursive;
 }
 #image_1{
     position:fixed;
@@ -421,9 +421,90 @@
     width:400px;
     margin:auto;
     font-size:20px;
+    border-style: double;
+    border-width:15px;
+    border-color:black;
+    border-radius:10px;
+    padding:10px;
 }
 
 #comments{
     top:200px;
     position:relative;
+}
+
+.h12{
+    font-size:30px;
+    left:-200px;
+    position:relative;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#comment{
+    width:500px;
+    height:100px;
+    text-align:left;
+    font-family: 'Exo 2', sans-serif;
+    font-size:25px;
+}
+
+#inputName{
+    font-family: 'Exo 2', sans-serif;
+    font-size:30px;
+}
+
+#bS{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    border:none;
+    transition: transform .5s;
+}
+
+#bS:hover{
+    transform: scale(1.3);
+}
+
+
+#list{
+    width:700px;
+    margin:auto;
+    top:30px;
+    position:relative;
+    font-family: 'Exo 2', sans-serif;
+    font-size:20px;
+}
+
+#line{
+    height:2px;
+    width:700px;
+    background-color:black;
+    margin:auto;
+}
+
+.homebutton{
+    position: fixed;
+    width:200px;
+    height:130px;
+    left:10px;
+    background-color:#e5c7b0;
+    padding: 15px;
+    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-size:25px;
+    z-index:10;
+    border-style: double;
+    border-width:15px;
+    border-color:rgb(239,6,61,0.5);
+    border-radius:10px;
+}
+
+
+#starter{
+    position:relative;
+    text-align:center;
+    margin:auto;
+    top:300px;
+    font-size:90px;
+    font-family: 'Shadows Into Light', cursive;
 }

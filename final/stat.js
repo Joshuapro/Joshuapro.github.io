@@ -3,8 +3,11 @@ let totalC;
 let totalD;
 let totalR;
 let GetDateUpdate;
+
 $(document).ready(function(){
+    //Call API
     setApiData();
+    retrieveComments();
 })
 
 function setApiData(){
@@ -45,9 +48,57 @@ function setApiData(){
 }
 
 
+//get all comments
+function retrieveComments(){
+    let ref = firebase.database().ref("User");
+    ref.on("value", gotData);
+}
+function gotData(data){
+    let info = data.val();
+    let keys = Object.keys(info);
+    
+    for (let i = 0; i < keys.length; i++){
+        let j = keys[i];
+        let name = info[j].name;
+        let comment = info[j].comment;
+        let date = info[j].date;
+    
+        var commentString = "(" + date + ") " + name + ": "+ comment;
+        var text = document.createTextNode(commentString);
+        var item = document.createElement("li");
+        item.append(text);
+        item.className = "list-group-item";
+        document.getElementById("list").append(item);
+    }
+}
+
+
+//update api
 $("#buttonUpdate").click(function(){
     setApiData();
     $("#dateUsers").fadeOut();
     $("#dateUsers").fadeIn();
+});
 
+//submit comments
+$("#bS").click(function(){
+    //get user input
+    let inputname = document.getElementById("inputName").value;
+    let inputComment = document.getElementById("comment").value;
+    //set to nothing
+    document.getElementById("inputName").value = "";
+    document.getElementById("comment").value = "";
+    //get date
+    var currentdate = new Date();
+    var datetime = currentdate.getFullYear()  + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "  "
+    + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds()
+    
+    const database = firebase.database();
+    //set in database
+    database.ref("User/" + inputname + Math.floor(Math.random() * 220)).set({
+        name: inputname,
+        comment:inputComment,
+        date: datetime,
+    })
+    location.reload();
 });

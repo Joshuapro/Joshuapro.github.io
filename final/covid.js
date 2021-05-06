@@ -2,7 +2,8 @@ let virusCount = 6;
 //home page
 $(document).ready(function(){
     //a delay start
-    setTimeout("animateDiv()",1500);
+    setTimeout("animateDiv()",2500);
+    setTimeout("dissolve()",1500);
     //initializations
     var newpos = makeNewPosition();
     $("#image_2").css({top: newpos[0], left: newpos[1]});
@@ -75,6 +76,9 @@ function makeNewPosition(){
     return [nheight,nweight];
 }
 
+function dissolve(){
+    $('#starter').fadeOut();
+}
 function animateDiv(){
     var newpos = makeNewPosition();
     var newpos2 = makeNewPosition();
